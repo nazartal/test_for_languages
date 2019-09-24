@@ -4,7 +4,7 @@ import time
 
 link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
-def add_in_basket_button_present(browser):
+def basket_button_present(browser):
     try:
         browser.find_element(By.CSS_SELECTOR, ".btn-add-to-basket")
     except (NoSuchElementException):
